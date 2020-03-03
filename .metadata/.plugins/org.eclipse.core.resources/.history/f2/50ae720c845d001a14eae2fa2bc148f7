@@ -1,0 +1,11 @@
+package project_0;
+
+public interface Menu {
+	public static void mainMenu() {
+		System.out.println("hello world");
+	}
+	
+	public static void withdrawing() {
+		
+	}
+}

@@ -1,0 +1,133 @@
+package project_0;
+
+//import java.io;
+import java.util.Scanner;
+
+class Account implements java.io.Serializable {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	public int id;
+	public String accountName;
+	
+	public Account(int id, String accountName) {
+		this.id = id;
+		this.accountName = accountName;
+		
+	}
+}
+
+public class Driver {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int option = 0;
+		do {
+			System.out.println("Project 0 banking app\n"
+					  + "*********************       \n"
+					  + "Select an option:           \n"
+					  + "Exit..................... 0 \n"
+					  + "Create new account....... 1 \n"
+					  + "Log in................... 2 \n");
+			int input = scan.nextInt();
+			scan.nextLine();		
+				switch(input) {
+			case 0:
+				System.out.println("Exiting application...");
+				return;
+			case 1:
+				//CHOOSE ACCOUNT TO CREATE
+				System.out.println("What kind of account would you like to create?\n\n"
+						+ "Individual Account...... 1\n"
+						+ "Joint Account........... 2\n");
+				int accountType = scan.nextInt();
+				scan.nextLine();
+				switch(accountType) {
+				case 1:
+					//CREATING INDIVIDUAL ACCOUNT
+					System.out.println("Please enter the first and last name for the account: \n");
+					String newAccountName = scan.nextLine();
+					System.out.println("Please enter a password for your account:\n");
+					String newAccountPassword = scan.nextLine();
+					
+					//TODO create account process
+					System.out.println("Your account has been successfully created for" + newAccountName + "!\n"
+							+ "You can now access your new account by logging in at the main menu.");
+					
+					break;
+				case 2:
+					//CREATING JOINT ACCOUNT
+					System.out.println("Please enter your first and last name for the account: \n");
+					String newJointAccountName1 = scan.nextLine();
+					System.out.println("Please enter your joint account holder's first and last name: \n");
+					String newJointAccountName2 = scan.nextLine();
+					System.out.println("Please enter a password for your account:\n");
+					String newJointAccountPassword = scan.nextLine();
+					
+					//TODO use a create-new-account process
+					//TODO check for account not found exception
+					System.out.println("Your account has been successfully created for" + newJointAccountName1 + " and " + newJointAccountName2 + "!\n"
+							+ "You can now access your new account by logging in at the main menu.");
+					break;
+				}
+
+			case 2:
+				//LOGGING IN
+				System.out.println("Enter the name associated with your account: \n");
+				String nameCredentials = scan.nextLine();
+				System.out.println("Please enter the password associated with you account: \n");
+				String passwordCredentials = scan.nextLine();
+				//TODO call a log-in process
+				//TODO create an account not found exception
+				System.out.println("Awaiting confirmation. Returning to main menu.\n");
+			}
+		} while (option != 0);
+	}
+	
+	public static void logIn(Scanner scan, String name) {
+		boolean accountFound = false;
+		do {
+			//password prompt
+			//load accounts and search for user name
+			accountFound = authenticate(name);
+			
+			//if no account found
+			if (!accountFound) {
+				System.out.println("\nAccount not found. Would you "
+						+ "like to create an account or try logging in again?\n"
+						+ "Exit..................... 0\n"
+						+ "Create account........... 1\n"
+						+ "Try again................ 2");
+				int input = scan.nextInt();
+				scan.nextLine();
+				
+				switch(input) {
+				case 1:
+					//call create account
+					break;
+				case 2:
+					break;
+				case 3:
+					break;
+				}
+			} else {
+				//account found
+			}
+			
+			//prompt account creation?
+			//call account creation function
+		} while (!accountFound);
+		
+	}
+	
+	public static boolean authenticate(String s) {
+		return false;
+	}
+	
+	public static void pullAccountInfo(Scanner scan) {
+		//retrieve account info (from .ser file)
+	}
+
+}

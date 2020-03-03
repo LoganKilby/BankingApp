@@ -1,0 +1,48 @@
+package project_0;
+
+import java.util.Scanner;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		int option = 0;
+		//do {
+			option = displayMainMenu();
+			
+			switch(option) {
+			case 1:
+				logIn();
+				return;
+				//break;
+			case 2:
+				//create an account
+				break;
+			case 3:
+				System.out.println("Exiting...");
+				return;
+			}
+		//} while (option != 0);
+	}
+	
+	public static int displayMainMenu() {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Project 0 banking app       \n"
+						 + "*********************       \n"
+						 + "Select an option:           \n"
+						 + "Log in................... 1	\n"
+						 + "Create new account....... 2 \n"
+						 + "Exit..................... 3");
+		int input = scan.nextInt();
+		scan.close();
+		return input;
+	}
+	
+	public static void logIn() {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the name associated with your account: ");
+		String name = scan.nextLine();
+		System.out.println(name);
+		return;
+	}
+
+}

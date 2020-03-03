@@ -1,0 +1,72 @@
+package project_0;
+
+//import java.io;
+import java.util.Scanner;
+
+class Account implements java.io.Serializable {
+	public int id;
+	public String accountName;
+	
+	public Account(int id, String accountName) {
+		this.id = id;
+		this.accountName = accountName;
+	}
+}
+
+public class Driver {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int option = 0;
+		//do {
+			option = displayMainMenu(scan);
+			
+			switch(option) {
+			case 1:
+				logIn(scan);
+				return;
+			case 2:
+				//create an account
+				break;
+			case 3:
+				System.out.println("Exiting...");
+				return;
+			}
+		//} while (option != 0);
+	}
+	
+	public static int displayMainMenu(Scanner scan) {
+		System.out.println("Project 0 banking app       \n"
+						 + "*********************       \n"
+						 + "Select an option:           \n"
+						 + "Log in................... 1	\n"
+						 + "Create new account....... 2 \n"
+						 + "Exit..................... 3");
+		int input = scan.nextInt();
+		scan.nextLine();
+		return input;
+	}
+	
+	public static void logIn(Scanner scan) {
+		System.out.println("Enter the name associated with your account: ");
+		String name = scan.nextLine();
+		System.out.println(name);		
+
+		//check account status
+		boolean accountFound = false;
+		//what would you like to do? :sysout:
+		if (accountFound) {
+			//prompt password
+			System.out.println("\nAccount not found. Would you"
+					+ "like to create an account or try logging in again?\n"
+					+ "Create account.......1\n"
+					+ "Log in...............2");
+			String option = scan.next();
+		} else {
+			//prompt account creation?
+			//call account creation function
+		}
+		
+	}
+
+}
