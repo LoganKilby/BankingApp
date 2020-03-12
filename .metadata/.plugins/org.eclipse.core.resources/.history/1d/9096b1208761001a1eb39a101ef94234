@@ -1,0 +1,23 @@
+package models;
+
+public class Account {
+	
+	private int id;
+	private double balance;
+	private String account_type;
+	private String account_status;
+	private String owner;
+	
+	public Account() {
+		super();
+	}
+
+	public Account(int id, double balance, String account_type, String account_status, String owner) {
+		super();
+		this.id = id;
+		this.balance = balance;
+		this.account_type = account_type;
+		this.account_status = account_status;
+		this.owner = owner;
+	}
+}

@@ -1,0 +1,16 @@
+package dataAccess;
+
+import java.util.List;
+
+import models.Employee;
+
+public interface EmployeeDAO {
+
+	public int insert(Employee emp);
+	
+	public List<Employee> findAll();
+	
+	public Employee findById(int id);
+	
+	public List<Employee> test();
+}

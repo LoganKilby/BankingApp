@@ -1,0 +1,12 @@
+package daoapi;
+
+import java.util.List;
+
+import domain.User;
+
+public interface Dao<T> {
+	public T get();
+	public T logIn(String usernameInput, String passwordInput);
+	public T employeeLogIn(String usernameInput, String passwordInput);
+	public String getFullName();
+}

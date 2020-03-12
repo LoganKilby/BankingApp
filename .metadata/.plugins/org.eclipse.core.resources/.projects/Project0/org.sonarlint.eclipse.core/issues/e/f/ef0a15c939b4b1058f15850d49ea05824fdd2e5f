@@ -1,0 +1,19 @@
+
+†	java:S116"TRename this field "last_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šø´¯8í§ì‹.HîBRMINORZ
+CODE_SMELL
+ƒ	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊƒÆô8ŒË¿ş‹.HõBRMINORZ
+CODE_SMELL
+s	java:S107"AConstructor has 8 parameters, which is greater than 7 authorized.(Ã¦Œ¥8ŒË¿ş‹.HòBRMAJORZ
+CODE_SMELL
+€	java:S1002"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìşæ8¶üåş‹.HôBRMINORZ
+CODE_SMELL
+ƒ	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã¦Œ¥8í§ì‹.HóBRMINORZ
+CODE_SMELL
+ƒ	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊƒÆô8ŒË¿ş‹.HíBRMINORZ
+CODE_SMELL
+ƒ	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã¦Œ¥8í§ì‹.HñBRMINORZ
+CODE_SMELL
+…	java:S1006"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İí‚Æùÿÿÿÿ8¶üåş‹.HïBRMINORZ
+CODE_SMELL
+‡	java:S116"URename this field "first_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(è•Ûì8í§ì‹.HğBRMINORZ
+CODE_SMELL

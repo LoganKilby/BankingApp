@@ -1,0 +1,17 @@
+package dataAccess;
+
+import java.util.List;
+
+public class CustomerDAOImpl implements CustomerDAO {
+
+	public CustomerDAOImpl() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public List<Customer> findCustomer() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

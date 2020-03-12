@@ -1,0 +1,205 @@
+
+Š
+java:S1450"WRemove the "accounts" field and declare it as a local variable in the relevant methods.(‘•³8ùË£€Œ.H°@RMINORZ
+CODE_SMELL
+p	java:S106e"9Replace this use of System.out or System.err by a logger.(ş‹ »ùÿÿÿÿ8•’óƒŒ.HŞ@RMAJORZ
+CODE_SMELL
+p	java:S106z"9Replace this use of System.out or System.err by a logger.(õõ…öıÿÿÿÿ8“ø²Œ.Hş@RMAJORZ
+CODE_SMELL
+]	java:S131Î""Add a default case to this switch.(õ•„¥şÿÿÿÿ8®˜ô´Œ.H¯ERCRITICALZ
+CODE_SMELL
+k	java:S106r"9Replace this use of System.out or System.err by a logger.(ÎûÇ³8“ø²Œ.H€ARMAJORZ
+CODE_SMELL
+l	java:S106¾"9Replace this use of System.out or System.err by a logger.(Ç„ıŞ8®˜ô´Œ.H±ERMAJORZ
+CODE_SMELL
+q	java:S106"9Replace this use of System.out or System.err by a logger.(À™£‘ûÿÿÿÿ8“ø²Œ.HƒARMAJORZ
+CODE_SMELL
+q	java:S106¥"9Replace this use of System.out or System.err by a logger.(Ç¥àÈüÿÿÿÿ8ªœÿŠ.Hğ@RMAJORZ
+CODE_SMELL
+k	java:S1069"9Replace this use of System.out or System.err by a logger.(ÑŞµÖ8¯˜ô´Œ.H²ERMAJORZ
+CODE_SMELL
+l	java:S106ñ"9Replace this use of System.out or System.err by a logger.(¢×€Ä8£ü¹Œ.HÒGRMAJORZ
+CODE_SMELL
+k	java:S106#"9Replace this use of System.out or System.err by a logger.(¿Ã”²8ªœÿŠ.HÇ@RMAJORZ
+CODE_SMELL
+q	java:S106Ö"9Replace this use of System.out or System.err by a logger.(æ¨¤šøÿÿÿÿ8“ø²Œ.HARMAJORZ
+CODE_SMELL
+q	java:S106†"9Replace this use of System.out or System.err by a logger.(œ¹Ë¡øÿÿÿÿ8“ø²Œ.Hû@RMAJORZ
+CODE_SMELL
+l	java:S106‰"9Replace this use of System.out or System.err by a logger.(áÂª8“ø²Œ.H…ARMAJORZ
+CODE_SMELL
+l	java:S106ñ"9Replace this use of System.out or System.err by a logger.(¢×€Ä8ñİ¸î‹.HĞ@RMAJORZ
+CODE_SMELL
+l	java:S106¨"9Replace this use of System.out or System.err by a logger.(Šù“‘8Ûñ«”Š.H›HRMAJORZ
+CODE_SMELL
+l	java:S106”"9Replace this use of System.out or System.err by a logger.(áÂª8ÚØÔş‹.H­@RMAJORZ
+CODE_SMELL
+e
+java:S1135Ø"2Complete the task associated to this TODO comment.(ÿìœƒ8‚â«’Œ.H¯@RINFOZ
+CODE_SMELL
+l	java:S106ù"9Replace this use of System.out or System.err by a logger.(¡®Šß8ù’§´Œ.HëHRMAJORZ
+CODE_SMELL
+l	java:S106‹"9Replace this use of System.out or System.err by a logger.(ğÍÔİ8“ø²Œ.HªERMAJORZ
+CODE_SMELL
+F
+java:S1220""Move this file to a named package.H¾@RMINORZ
+CODE_SMELL
+k	java:S106>"9Replace this use of System.out or System.err by a logger.(·8¥…µŒ.H¿ERMAJORZ
+CODE_SMELL
+k	java:S106'"9Replace this use of System.out or System.err by a logger.(®µÔŞ8ªœÿŠ.H»@RMAJORZ
+CODE_SMELL
+
+java:S1192A"XDefine a constant instead of duplicating this literal "Select an option:    \n" 3 times.(®€ş8®˜ô´Œ.H®ERCRITICALZ
+CODE_SMELL
+l	java:S106·"9Replace this use of System.out or System.err by a logger.(¬¨©8‚â«’Œ.HÓ@RMAJORZ
+CODE_SMELL
+X	java:S131ë""Add a default case to this switch.(ñ¶‰á8ªœÿŠ.Hï@RCRITICALZ
+CODE_SMELL
+q	java:S106­"9Replace this use of System.out or System.err by a logger.(©€‚øÿÿÿÿ8ªœÿŠ.H½@RMAJORZ
+CODE_SMELL
+k	java:S106"9Replace this use of System.out or System.err by a logger.(‘æÆË8ªœÿŠ.HÖ@RMAJORZ
+CODE_SMELL
+q	java:S106œ"9Replace this use of System.out or System.err by a logger.(æ¨¤šøÿÿÿÿ8¥…µŒ.H¼ERMAJORZ
+CODE_SMELL
+q	java:S106°"9Replace this use of System.out or System.err by a logger.(­ã‘òúÿÿÿÿ8¥…µŒ.H¾ERMAJORZ
+CODE_SMELL
+q	java:S106Ø"9Replace this use of System.out or System.err by a logger.(ê·ë¸şÿÿÿÿ8³’ªÅ‹.HÌ@RMAJORZ
+CODE_SMELL
+j	java:S106R"9Replace this use of System.out or System.err by a logger.(ë‹”#8“ø²Œ.H­ERMAJORZ
+CODE_SMELL
+l	java:S106ø"9Replace this use of System.out or System.err by a logger.(®€ş8ªœÿŠ.Hí@RMAJORZ
+CODE_SMELL
+q	java:S106Ô"9Replace this use of System.out or System.err by a logger.(£Øºûûÿÿÿÿ8ßèŸì‹.Hº@RMAJORZ
+CODE_SMELL
+l	java:S106å"9Replace this use of System.out or System.err by a logger.(®€ş8ªœÿŠ.H«@RMAJORZ
+CODE_SMELL
+l	java:S106"9Replace this use of System.out or System.err by a logger.(ãÊª´8ßèŸì‹.H¬@RMAJORZ
+CODE_SMELL
+\	java:S131K""Add a default case to this switch.(èûŸäúÿÿÿÿ8ªœÿŠ.HÆ@RCRITICALZ
+CODE_SMELL
+l	java:S106ƒ"9Replace this use of System.out or System.err by a logger.(Àˆò™8ªœÿŠ.H³@RMAJORZ
+CODE_SMELL
+l	java:S106Ä"9Replace this use of System.out or System.err by a logger.(¬¨©8ªœÿŠ.H®@RMAJORZ
+CODE_SMELL
+q	java:S106ê"9Replace this use of System.out or System.err by a logger.(­ã‘òúÿÿÿÿ8“ø²Œ.Hü@RMAJORZ
+CODE_SMELL
+k	java:S106k"9Replace this use of System.out or System.err by a logger.(ÒÔÿá8“ø²Œ.H‚ARMAJORZ
+CODE_SMELL
+k	java:S106t"9Replace this use of System.out or System.err by a logger.(áÂª8ßèŸì‹.HÔ@RMAJORZ
+CODE_SMELL
+š
+java:S1192"_Define a constant instead of duplicating this literal "Exit..................... 0 \n" 4 times.(úœí÷úÿÿÿÿ8ªœÿŠ.HÃ@RCRITICALZ
+CODE_SMELL
+j
+java:S1135"2Complete the task associated to this TODO comment.(æ¸œ†øÿÿÿÿ8ªœÿŠ.Hâ@RINFOZ
+CODE_SMELL
+q	java:S106–"9Replace this use of System.out or System.err by a logger.(È¦¾‡ıÿÿÿÿ8ªœÿŠ.Hë@RMAJORZ
+CODE_SMELL
+l	java:S106¶"9Replace this use of System.out or System.err by a logger.(äÚ¹8œ‰ñŠ.HÛ@RMAJORZ
+CODE_SMELL
+]	java:S131‚""Add a default case to this switch.(Ù¥¡ìùÿÿÿÿ8ªœÿŠ.HÉ@RCRITICALZ
+CODE_SMELL
+l	java:S106"9Replace this use of System.out or System.err by a logger.(ÜÃ»¥8ç•ñ·Œ.H×FRMAJORZ
+CODE_SMELL
+l	java:S106Å"9Replace this use of System.out or System.err by a logger.(¹í‚‹8üÁŒ´Œ.H„DRMAJORZ
+CODE_SMELL
+l	java:S106â"9Replace this use of System.out or System.err by a logger.(ÌÈ«ˆ8ªœÿŠ.HÄ@RMAJORZ
+CODE_SMELL
+‰
+java:S1450"VRemove the "userDao" field and declare it as a local variable in the relevant methods.(…ïËò8×¡æì‹.Hê@RMINORZ
+CODE_SMELL
+‰
+java:S3776"SRefactor this method to reduce its Cognitive Complexity from 237 to the 15 allowed.(Çµí‘8ªœÿŠ.Hµ@RCRITICALZ
+CODE_SMELL
+j
+java:S1135¸"2Complete the task associated to this TODO comment.(‹®Î·ıÿÿÿÿ8‚â«’Œ.Hå@RINFOZ
+CODE_SMELL
+j
+java:S1135ó"2Complete the task associated to this TODO comment.(â²úÿÿÿÿ8ªœÿŠ.H¨@RINFOZ
+CODE_SMELL
+‹
+java:S1450"SRemove the "user" field and declare it as a local variable in the relevant methods.(±Á´üûÿÿÿÿ8£ü¹Œ.HÑGRMINORZ
+CODE_SMELL
+l	java:S106 "9Replace this use of System.out or System.err by a logger.(Íşë®8ßèŸì‹.H±@RMAJORZ
+CODE_SMELL
+q	java:S106æ"9Replace this use of System.out or System.err by a logger.(©€‚øÿÿÿÿ8 ¿Ó¹Œ.HÈGRMAJORZ
+CODE_SMELL
+l	java:S106¯"9Replace this use of System.out or System.err by a logger.(ù¶ùÃ8ßèŸì‹.Há@RMAJORZ
+CODE_SMELL
+l	java:S106Ó"9Replace this use of System.out or System.err by a logger.(¢£É8ßèŸì‹.HÈ@RMAJORZ
+CODE_SMELL
+l	java:S106”"9Replace this use of System.out or System.err by a logger.(²Ö†Œ8ªœÿŠ.HÑ@RMAJORZ
+CODE_SMELL
+W	java:S131""Add a default case to this switch.(™Ïêƒ8ªœÿŠ.H¹@RCRITICALZ
+CODE_SMELL
+q	java:S106‡"9Replace this use of System.out or System.err by a logger.(•ƒÃÅúÿÿÿÿ8“ø²Œ.H„ARMAJORZ
+CODE_SMELL
+k	java:S106Ò"9Replace this use of System.out or System.err by a logger.(…àu8‹Âºş‹.H·@RMAJORZ
+CODE_SMELL
+q	java:S106’"9Replace this use of System.out or System.err by a logger.(ÓæÊÔıÿÿÿÿ8ç•ñ·Œ.HØFRMAJORZ
+CODE_SMELL
+u
+java:S1854o"BRemove this useless assignment to local variable "accountBalance".(¶À¬î8ªŸ‡Œ.HÕ@RMAJORZ
+CODE_SMELL
+l	java:S106Ç"9Replace this use of System.out or System.err by a logger.(¬¨©8ªœÿŠ.HÒ@RMAJORZ
+CODE_SMELL
+l	java:S106¡"9Replace this use of System.out or System.err by a logger.(Å±×Ó8‹Âºş‹.HÏ@RMAJORZ
+CODE_SMELL
+k	java:S1067"9Replace this use of System.out or System.err by a logger.(éƒèõ8ªœÿŠ.Hì@RMAJORZ
+CODE_SMELL
+r
+java:S1155‡">Use isEmpty() to check whether the collection is empty or not.(È÷¨Á8¬ÒÕ“Œ.Hè@RMINORZ
+CODE_SMELL
+q	java:S106š"9Replace this use of System.out or System.err by a logger.(Úàá‡şÿÿÿÿ8“ø²Œ.H‡ARMAJORZ
+CODE_SMELL
+k	java:S106)"9Replace this use of System.out or System.err by a logger.(­é”ã8ßèŸì‹.H¿@RMAJORZ
+CODE_SMELL
+˜
+java:S1192>"bDefine a constant instead of duplicating this literal "Log in successful. Welcome back, " 3 times.(·8ÖÅÖ´Œ.H–ERCRITICALZ
+CODE_SMELL
+l	java:S106£"9Replace this use of System.out or System.err by a logger.(×¹¬˜8§ÜÄ™Š.H©ERMAJORZ
+CODE_SMELL
+k	java:S106/"9Replace this use of System.out or System.err by a logger.(Ò™×8ßèŸì‹.HÜ@RMAJORZ
+CODE_SMELL
+l	java:S106„"9Replace this use of System.out or System.err by a logger.(§çÀõ8ªœÿŠ.Hç@RMAJORZ
+CODE_SMELL
+l	java:S106Á"9Replace this use of System.out or System.err by a logger.(ÌÈ«ˆ8¯‰–‡Œ.HÎ@RMAJORZ
+CODE_SMELL
+q	java:S106ó"9Replace this use of System.out or System.err by a logger.(¾ÏÕ±ıÿÿÿÿ8ªœÿŠ.H¬ERMAJORZ
+CODE_SMELL
+l	java:S106ï"9Replace this use of System.out or System.err by a logger.(õÈê¢8ªœÿŠ.Hª@RMAJORZ
+CODE_SMELL
+q	java:S106ï"9Replace this use of System.out or System.err by a logger.(ššˆâÿÿÿÿÿ8ªœÿŠ.Hä@RMAJORZ
+CODE_SMELL
+q	java:S106‰"9Replace this use of System.out or System.err by a logger.(æ¨¤šøÿÿÿÿ8¬ÒÕ“Œ.H«ERMAJORZ
+CODE_SMELL
+p	java:S106+"9Replace this use of System.out or System.err by a logger.(¦Š†Åøÿÿÿÿ8™‰¯³Œ.HàBRMAJORZ
+CODE_SMELL
+d
+java:S1135S"2Complete the task associated to this TODO comment.(ÿ®ô8ªœÿŠ.Hæ@RINFOZ
+CODE_SMELL
+q	java:S106£"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8ªœÿŠ.H÷@RMAJORZ
+CODE_SMELL
+k	java:S106U"9Replace this use of System.out or System.err by a logger.(áÂª8ªœÿŠ.HÂ@RMAJORZ
+CODE_SMELL
+p	java:S106a"9Replace this use of System.out or System.err by a logger.(§¥Âıÿÿÿÿ8‹Âºş‹.Hã@RMAJORZ
+CODE_SMELL
+l	java:S106Û"9Replace this use of System.out or System.err by a logger.(Å±×Ó8“ø²Œ.Hÿ@RMAJORZ
+CODE_SMELL
+l	java:S106²"9Replace this use of System.out or System.err by a logger.(´¥Ãà8®˜ô´Œ.H°ERMAJORZ
+CODE_SMELL
+k	java:S106A"9Replace this use of System.out or System.err by a logger.(®€ş8ªœÿŠ.HÙ@RMAJORZ
+CODE_SMELL
+l	java:S106º"9Replace this use of System.out or System.err by a logger.(¬¨©8ªœÿŠ.H´@RMAJORZ
+CODE_SMELL
+¹
+java:S1192·"Define a constant instead of duplicating this literal "Application complete! Your application will be reviewed shortly." 4 times.(¬¨©8‚â«’Œ.Hò@RCRITICALZ
+CODE_SMELL
+k	java:S106-"9Replace this use of System.out or System.err by a logger.(½ÛáÌ8ªœÿŠ.Hô@RMAJORZ
+CODE_SMELL
+q	java:S106¤"9Replace this use of System.out or System.err by a logger.(‡°ª®şÿÿÿÿ8‚â«’Œ.Hà@RMAJORZ
+CODE_SMELL
+X	java:S131ÿ""Add a default case to this switch.(¨ÕÉ8ªœÿŠ.H²@RCRITICALZ
+CODE_SMELL
+q	java:S106"9Replace this use of System.out or System.err by a logger.(ê·ë¸şÿÿÿÿ8¬ÒÕ“Œ.H×@RMAJORZ
+CODE_SMELL

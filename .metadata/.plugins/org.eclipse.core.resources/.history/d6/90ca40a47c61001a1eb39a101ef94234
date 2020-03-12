@@ -1,0 +1,44 @@
+package models;
+
+import java.util.ArrayList;
+
+public class Customer {
+
+	private int customerId;
+	private String firstName;
+	private String lastName;
+	private String email;
+	private String username;
+	private String password;
+	private List<Customer> customers;
+	
+	public Customer() {
+		super();
+	}
+
+	public Customer(int customerId, String firstName, String lastName, String email, String username, String password) {
+		super();
+		this.customerId = customerId;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+		this.username = username;
+		this.password = password;
+	}
+
+	public Customer(int customerId, String firstName, String lastName, String email, String username, String password,
+			List<Customer> customers) {
+		super();
+		this.customerId = customerId;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+		this.username = username;
+		this.password = password;
+		this.customers = new ArrayList<>();
+	}
+	
+	
+	
+
+}

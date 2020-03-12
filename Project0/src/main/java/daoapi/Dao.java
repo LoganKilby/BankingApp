@@ -1,0 +1,26 @@
+package daoapi;
+
+import java.util.List;
+
+import domain.Account;
+import domain.User;
+
+public interface Dao<T> {
+	public T get();
+	public T logIn(String usernameInput, String passwordInput);
+	public User employeeLogIn(String usernameInput, String passwordInput);
+	public String getFullName();
+	public List<Account> findAccounts(int id);
+	public int getCustomerId();
+	public int withdraw(int amount, int id);
+	public void deposit(int amount, int id);
+	public void transferFunds(int source, int target, int amount);
+	public void applyForAccount(String accountType, int owner1);
+	public void applyForJointAccount(String accountType, int owner1, int owner2);
+	public User findCustomerByName(String fName, String lName);
+	List<Account> getPendingAccounts();
+	public void reviewAccounts(int id, int appChoice);
+	public int lookupBalance(int sourceId);
+	public void cancelAccount(int accountId);
+	public void newCustomer(String firstName, String lastName, String email, String username, String password);
+}

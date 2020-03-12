@@ -1,0 +1,445 @@
+import java.util.*;
+
+import daoapi.Dao;
+import daoclass.UserDao;
+import domain.Account;
+import domain.User;
+
+
+public class Driver {
+	
+	private static Dao<?> userDao;
+	private static User user;
+	private static List<Account> accounts;
+
+	public static void main(String[] args) {
+		
+		userDao = new UserDao();
+		
+		Scanner scan = new Scanner(System.in);
+		int input;
+		do {
+			System.out.println("Project 0 banking app\n"
+					  + "*********************       \n"
+					  + "Select an option:           \n"
+					  + "Exit..................... 0 \n"
+					  + "Register................. 1 \n"
+					  + "Customer Log in.......... 2 \n"
+					  + "Employee Log in.......... 3 \n");
+			input = scan.nextInt();
+			scan.nextLine();		
+				switch(input) {
+			case 0:
+				
+				//EXIT
+				System.out.println("Exiting application...");
+				break;
+			case 1:
+				//REGISTER
+				System.out.println("To create an account, start by entering your first name: \n");
+				String firstName = scan.nextLine();
+				System.out.println("Now enter your last name: \n");
+				String lastName = scan.nextLine();
+				System.out.println("Please enter your email: \n");
+				String email = scan.nextLine();
+				System.out.println("Now enter a unique username for your account: \n");
+				String username = scan.nextLine();
+				System.out.println("Not enter a password: \n");
+				String password = scan.nextLine();
+				
+				break;
+			case 2:
+				//CUSTOMER LOG IN
+				System.out.println("Enter the name associated with your account: \n");
+				String nameCredentials = scan.nextLine();
+				System.out.println("Please enter the password associated with you account: \n");
+				String passwordCredentials = scan.nextLine();
+				
+				if(userDao.logIn("bobjob", "0000") != null) {
+					int accountOption;
+					System.out.println("Log in successful. Welcome back, " + userDao.getFullName() + "!\n");
+					do {
+						//Once the account is open, customers should be able to withdraw, deposit, and transfer funds between accounts
+						System.out.println("Select an option:    \n"
+								  + "Log out.................. 0 \n"
+								  + "Withdraw from account.... 1 \n"
+								  + "Deposit to account....... 2 \n"
+								  + "Transfer funds........... 3 \n"
+								  + "Apply for an account .... 4");
+						
+						accountOption = scan.nextInt();
+						scan.nextLine();
+						
+						switch(accountOption) {
+						case 0:
+							break;
+						case 1:
+							int accountBalance = 0;
+							accounts = userDao.findAccounts(userDao.getCustomerId());
+							//WITHDRAWING
+							System.out.println("Choose the ID of the account you'd like to withdraw from: ");
+							//TODO show their accounts
+							for (Account a: accounts) {
+								System.out.println(a.toString());
+							}
+					
+							int withdrawFrom = scan.nextInt();
+							scan.nextLine();
+							
+							for (Account a: accounts) {
+								if (a.getId() == withdrawFrom) {
+									accountBalance = a.getBalance();
+								}
+							}
+							
+							System.out.println("How much would you like to withdraw?\n ");
+							int withdrawAmount = scan.nextInt();
+							scan.nextLine();
+							if (accountBalance - withdrawAmount < 0) {
+								System.out.println("Insufficient funds to withdraw that amount.\n");
+								break;
+							}
+							int newBalance = accountBalance - withdrawAmount;
+							userDao.withdraw(withdrawAmount, withdrawFrom);
+							
+							System.out.println("Withdraw of  " + withdrawAmount + " complete. New account balance: " + newBalance + "\n");
+							break;
+						case 2:
+							//DEPOSITING
+							accountBalance = 0;
+							accounts = userDao.findAccounts(userDao.getCustomerId());
+	
+							System.out.println("Choose the ID of the account you'd like to deposit to: \n");
+							for (Account a: accounts) {
+								System.out.println(a.toString());
+							}
+					
+							int targetId = scan.nextInt();
+							scan.nextLine();
+							
+							System.out.println("How much would you like to deposit? \n ");
+							int depositAmount = scan.nextInt();
+							scan.nextLine();
+							userDao.deposit(targetId, depositAmount);
+							
+							System.out.println("Deposit successful");
+							break;
+						case 3:
+							//TRANSFERRING
+							accounts = userDao.findAccounts(userDao.getCustomerId());
+							if (accounts.size() < 2) {
+								System.out.println("You will need multiple 'active' accounts to initiate a transfer betwene them.\n");
+								break;
+							}
+							System.out.println("Choose the account you'd like to transfer from: ");
+							for (Account a: accounts) {
+								System.out.println(a.toString());
+							}
+							
+							int transferFrom = scan.nextInt();
+							scan.nextLine();
+							
+							System.out.println("Choose the account you'd like to transfer to: ");
+							//TODO show their accounts minus account that is being transfered from
+							
+							for (Account a: accounts) {
+								if (a.getId() != transferFrom) {
+									System.out.println(a.toString());
+								}
+							}
+							
+							int transferTo = scan.nextInt();
+							scan.nextLine();
+							System.out.println("How much would you like to transfer? \n");
+							int transferAmount = scan.nextInt();
+							scan.nextLine();
+							
+							userDao.transferFunds(transferFrom, transferTo, transferAmount);
+							
+							break;
+						case 4:
+							//APPLYING
+							System.out.println("Would you like to apply for a savings or checking account?");
+							int accountChoice = scan.nextInt();
+							scan.nextLine();
+							
+							System.out.println("What kind of account would you like to apply to?\n\n"
+									+ "Individual Account...... 1\n"
+									+ "Joint Account........... 2\n");
+							int accountApply = scan.nextInt();
+							scan.nextLine();
+							if (accountApply == 1) {
+								if (accountChoice == 2) {
+									userDao.applyForAccount("checking", user.getId());
+									System.out.println("Application complete! Your application will be reviewed shortly.");
+								} else if (accountChoice == 1) {
+									userDao.applyForAccount("savings", user.getId());
+									System.out.println("Application complete! Your application will be reviewed shortly.");
+
+								}
+							} else if (accountApply == 2) {
+								System.out.println("Please enter the customer ID of your joint owner: ");
+								int owner2Id = scan.nextInt();
+								scan.nextLine();
+								
+								if (accountChoice == 2) {
+									userDao.applyForJointAccount("checking", user.getId(), owner2Id);
+									System.out.println("Application complete! Your application will be reviewed shortly.");
+								} else if (accountChoice == 1) {
+									userDao.applyForJointAccount("savings", user.getId(), owner2Id);
+									System.out.println("Application complete! Your application will be reviewed shortly.");
+								}
+							}
+							break;
+						}
+					} while(accountOption != 0);
+				}
+				break;
+				
+			case 3:
+				
+				System.out.println("Please enter your username: \n");
+				String employeeUsername = scan.nextLine();
+				System.out.println("Please enter your password: \n");
+				String employeePassword = scan.nextLine();
+				user = userDao.employeeLogIn(employeeUsername, employeePassword);
+	
+				if (user.getTitle().equals("representative")) {//TODO CREDENTIALS = REPRESENTATIVE
+					//EMPLOYEE ACCOUNT
+					/*
+					 * Employees of the bank should be able to view all of their customers information. This includes:
+					 * Account information
+					 * Account balances
+					 * Personal information
+					 * Employees should be able to approve/deny open applications for accounts
+					 */
+					
+					System.out.println("Log in successful. Welcome back, " + user.getFirst_name() + "!\n");
+					int employeeAccountOption;
+					do {
+						System.out.println("Select an option:    \n"
+								  + "Log out.................. 0 \n"
+								  + "Lookup customer.......... 1 \n"
+								  + "Review applications...... 2 \n");
+						employeeAccountOption = scan.nextInt();
+						scan.nextLine();
+						switch(employeeAccountOption) {
+						case 0:
+							break;
+						case 1:
+							System.out.println("Enter the first name of the customer name you want to look up: \n");
+							String customerFirstName = scan.nextLine();
+							System.out.println("Enter the last name of the customer: \n");
+							String customerLastName = scan.nextLine();
+							//TODO look up customer account
+							User lookup = userDao.findCustomerByName(customerFirstName, customerLastName);
+							//I really shouldn't be using a list
+							if (lookup != null) {
+								int employeeCustomerChoice;
+								do {
+									System.out.println(" Customer Found. "
+											  + "Select an option to view:   \n"
+											  + "Exit..................... 0 \n"
+											  + "Account information...... 1 \n"
+											  + "Personal Information..... 2 \n");
+									
+									employeeCustomerChoice = scan.nextInt();
+									scan.nextLine();
+									
+									switch(employeeCustomerChoice) {
+									case 0:
+										break;
+									case 1:
+										accounts = userDao.findAccounts(lookup.getId());
+										if (accounts.size() > 0) {
+											for (Account a : accounts) {
+												System.out.println(a);
+											}
+										}
+										
+										break;
+									case 2:
+										System.out.println(lookup.toString());
+										break;
+									}
+								} while(employeeCustomerChoice != 0);
+							} else {
+								System.out.println("Customer account not found");
+							}
+							
+							break;
+						case 2:
+							accounts = userDao.getPendingAccounts();
+							if (!accounts.isEmpty()) {
+								for(Account a : accounts) {
+									System.out.println(a);
+								}
+								System.out.println("Please enter an account ID to take action on: \n");
+								int idReview = scan.nextInt();
+								scan.nextLine();
+								System.out.println("Please select an action to take: \n"
+												 + "Cancel review............ 0\n"
+												 + "Approve.................. 1\n"
+												 + "Deny..................... 2");
+								int reviewChoice = scan.nextInt();
+								scan.nextLine();
+								
+								if (reviewChoice == 0) {
+									break;
+								}
+								
+								userDao.reviewAccounts(idReview, reviewChoice);
+								System.out.println("User account status updated");
+								
+							} else {
+								System.out.println("No accounts pending review. \n");
+							}
+							
+							
+							break;
+						}	
+					} while(employeeAccountOption != 0);
+					
+				} else if (user.getTitle().equals("administrator")) {//TODO CREDENTIALS = ADMINSTRATOR
+					//ADMIN ACCOUNT
+					/*
+					 * Bank admins should be able to view and edit all accounts
+					 * This includes:
+					 * Approving/denying accounts
+				     * withdrawing, depositing, transferring from all accounts
+				     * canceling accounts
+					 */
+					System.out.println("Log in successful. Welcome back, "+ user.getFirst_name() +"!\n");
+
+					int adminChoice;
+					do {
+						System.out.println("Select an option to view: \n"
+								       + "Exit..................... 0 \n"
+								       + "Review Applications...... 1 \n"
+								       + "Lookup Account........... 2 \n"
+								       + "Create New Transaction... 3 \n"
+								       + "Cancel Accounts.......... 4 \n");
+						adminChoice = scan.nextInt();
+						scan.nextLine();
+						
+						switch(adminChoice) {
+						case 0:
+							break;
+						case 1: 
+							accounts = userDao.getPendingAccounts();
+							System.out.println("Here are all the open applications for review: ");
+							if (!accounts.isEmpty()) {
+								for(Account a : accounts) {
+									System.out.println(a);
+								}
+								System.out.println("Please enter an account ID to take action on: \n");
+								int idReview = scan.nextInt();
+								scan.nextLine();
+								System.out.println("Please select an action to take: \n"
+												 + "Cancel review............ 0"
+												 + "Approve.................. 1"
+												 + "Deny..................... 2");
+								int reviewChoice = scan.nextInt();
+								scan.nextLine();
+								
+								if (reviewChoice == 0) {
+									break;
+								} else if (reviewChoice == 1) {
+									userDao.reviewAccounts(idReview, reviewChoice);
+									System.out.println("User account status updated");
+								}
+							
+							} else {
+								System.out.println("No accounts pending review. \n");
+							}
+							
+							break;
+						case 2:
+							System.out.println("Enter the first name of the customer you'd like to look up: \n");
+							String lookupFirstName = scan.nextLine();
+							System.out.println("Enter the last name of the customer: \n");
+							String lookupLastName = scan.nextLine();
+							System.out.println(userDao.findCustomerByName(lookupFirstName, lookupLastName).toString());
+							break;
+						case 3: 
+							int choice;
+							do {
+								System.out.println("Select an option:    \n"
+										  + "Exit..................... 0 \n"
+										  + "Withdraw from account.... 1 \n"
+										  + "Deposit to account....... 2 \n"
+										  + "Transfer funds........... 3 \n");
+								choice = scan.nextInt();
+								scan.nextLine();
+								switch(choice) {
+								case 0:
+									break;
+								case 1:
+									System.out.println("Enter the account ID you'd like to withdraw from: \n");
+									int withdrawId = scan.nextInt();
+									scan.nextLine();
+									System.out.println("Enter the amount you'd like to withdraw: \n");
+									int withdrawAmount = scan.nextInt();
+									scan.nextLine();
+									int balance = userDao.lookupBalance(withdrawId);
+									if (balance < withdrawAmount) {
+										System.out.println("Insufficient funds to complete withdraw.");
+									} else {
+										userDao.withdraw(withdrawAmount, withdrawId);
+										System.out.println("Withdraw complete.");
+									}
+									
+									break;
+								case 2:
+									System.out.println("Enter the ID of the account you'd like to deposit into: \n");
+									int id = scan.nextInt();
+									scan.nextLine();
+									
+									System.out.println("Enter the amount you'd like to deposit: \n");
+									int amount = scan.nextInt();
+									scan.nextLine();
+									
+									userDao.deposit(amount, id);
+									System.out.println("Deposit completed.");
+									break;
+								case 3:
+									System.out.println("Enter the account ID you'd like to transfer from: \n");
+									int sourceId = scan.nextInt();
+									scan.nextLine();
+									System.out.println("Enter the account you're transfering to: \n");
+									int targetId = scan.nextInt();
+									scan.nextLine();
+									System.out.println("Enter the amount you're transferring: \n");
+									int transferAmount = scan.nextInt();
+									scan.nextLine();
+									int checkBalance = userDao.lookupBalance(sourceId);
+									if (checkBalance < transferAmount) {
+										System.out.println("Source account has insufficient funds to transfer. \n");
+									} else {
+										userDao.transferFunds(sourceId, targetId, transferAmount);
+										System.out.println("Transfer complete. \n");
+									}
+									break;
+								}
+							} while (choice != 0);
+							break;
+						case 4: 
+							//CANCELLING ACCOUNT
+							System.out.println("Enter the ID associated with the account that you're looking to cancel: ");
+							int accountId = scan.nextInt();
+							scan.nextLine();
+							userDao.cancelAccount(accountId);
+							System.out.println("Account is calcelled");
+							break;
+						}
+					} while(adminChoice != 0);
+				}
+
+				break; 
+			}
+		} while (input != 0);
+		scan.close();
+	}
+}
+
+

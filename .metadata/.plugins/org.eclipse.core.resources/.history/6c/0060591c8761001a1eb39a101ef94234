@@ -1,0 +1,5 @@
+package dataAccess;
+
+public class CustomerDAOImpl implements CustomerDAO {
+
+}

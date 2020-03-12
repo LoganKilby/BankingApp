@@ -1,0 +1,27 @@
+package domain;
+
+public class Account {
+	private int id;
+	private String accountType;
+	private String accountStatus;
+	private int owner;
+	private int jointOwner;
+	
+	public Account(int id, String accountType, String accountStatus, int owner, int jointOwner) {
+		super();
+		this.id = id;
+		this.accountType = accountType;
+		this.accountStatus = accountStatus;
+		this.owner = owner;
+		this.jointOwner = jointOwner;
+
+	}
+
+	@Override
+	public String toString() {
+		return "id: " + id + ", Account Type: " + accountType + ", Account Status: " + accountStatus + ", Owner: "
+				+ owner + ", Joint Owner: " + jointOwner + "]";
+	}
+	
+	
+}

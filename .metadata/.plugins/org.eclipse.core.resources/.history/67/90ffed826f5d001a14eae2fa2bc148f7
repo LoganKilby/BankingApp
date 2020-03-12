@@ -1,8 +1,0 @@
-package project_0;
-
-public interface Menu {
-	public default void mainMenu() {
-		System.out.println("hello world");
-	}
-	
-}

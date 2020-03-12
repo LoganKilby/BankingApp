@@ -1,0 +1,9 @@
+package dataAccess;
+
+public class CustomerDAOImpl {
+
+	public CustomerDAOImpl() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

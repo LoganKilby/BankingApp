@@ -1,0 +1,17 @@
+
+^
+java:S1148="#Use a logger to log this exception.(€ΙΤ…ύÿÿÿÿ8ά½Β‹.H‹RMINORZVULNERABILITY
+s	java:S125("<This block of commented-out lines of code should be removed.(ρ¥ωψÿÿÿÿ8ά½Β‹.HRMAJORZ
+CODE_SMELL
+w
+java:S2147>"DCombine this catch with the one at line 60, which has the same body.(Ι®£8ά½Β‹.HRMINORZ
+CODE_SMELL
+n	java:S125*"<This block of commented-out lines of code should be removed.(Οα£8ά½Β‹.HRMAJORZ
+CODE_SMELL
+s	java:S125#"<This block of commented-out lines of code should be removed.(ρ¥ωψÿÿÿÿ8ά½Β‹.HRMAJORZ
+CODE_SMELL
+`
+java:S49253"-Remove this "Class.forName()", it is useless.(ωνΔι8ά½Β‹.HRMAJORZ
+CODE_SMELL
+^
+java:S1148?"#Use a logger to log this exception.(€ΙΤ…ύÿÿÿÿ8ά½Β‹.H‘RMINORZVULNERABILITY

@@ -1,0 +1,180 @@
+
+ˆ	java:S117~"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û’ğ«ıÿÿÿÿ8“‚¯ÿ‹.H±ARMINORZ
+CODE_SMELL
+d
+java:S1135f"2Complete the task associated to this TODO comment.(¤Ş“Ã8‰ïŠ“Œ.H·ARINFOZ
+CODE_SMELL
+
+java:S11923"IDefine a constant instead of duplicating this literal "username" 3 times.(ê­¯8‰ïŠ“Œ.H˜ARCRITICALZ
+CODE_SMELL
+{
+java:S2095 "GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ÊõŞàşÿÿÿÿ8êèÕ“Œ.H¼ARBLOCKERZBUG
+j	java:S106g"9Replace this use of System.out or System.err by a logger.(¼üÊ%8Ëî¿³Œ.HüBRMAJORZ
+CODE_SMELL
+_
+java:S1168Œ"+Return an empty collection instead of null.(¥¹ï8‰­Åÿ‹.HARMAJORZ
+CODE_SMELL
+j
+java:S1135Å"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8·£«‚Œ.HŸARINFOZ
+CODE_SMELL
+‰	java:S117¥"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Í‹¥ûÿÿÿÿ8êèÕ“Œ.H²ARMINORZ
+CODE_SMELL
+e
+java:S1135ˆ"2Complete the task associated to this TODO comment.(¤Ş“Ã8“‚¯ÿ‹.HÄARINFOZ
+CODE_SMELL
+Y
+java:S1148f"#Use a logger to log this exception.(¤Ş“Ã8üÄ²ì‹.H³ARMINORZVULNERABILITY
+q	java:S106‰"9Replace this use of System.out or System.err by a logger.(‹‰‹‘ıÿÿÿÿ8îÁÇ³Œ.HCRMAJORZ
+CODE_SMELL
+„	java:S117£"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å¯Ğä8‰ïŠ“Œ.H™ARMINORZ
+CODE_SMELL
+}
+java:S2095t"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ĞÀœ¢8‰ïŠ“Œ.HÁARBLOCKERZBUG
+_
+java:S1148È"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8§„ªŒ.H•ARMINORZVULNERABILITY
+´
+java:S1192?"Define a constant instead of duplicating this literal "An account with that username and password could not be found." 3 times.(¼üÊ%8“‚¯ÿ‹.H’ARCRITICALZ
+CODE_SMELL
+}
+java:S2095'"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ĞÀœ¢8ˆü«³Œ.HÁBRBLOCKERZBUG
+p	java:S106b"9Replace this use of System.out or System.err by a logger.(¢—½šùÿÿÿÿ8‚Ó™ş‹.HARMAJORZ
+CODE_SMELL
+†
+java:S11920"KDefine a constant instead of duplicating this literal "first_name" 3 times.(İ°ú–úÿÿÿÿ8‰ïŠ“Œ.H»ARCRITICALZ
+CODE_SMELL
+~
+java:S2095÷"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ĞÀœ¢8•„ŸºŒ.HäGRBLOCKERZBUG
+_
+java:S1148ï"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8£³‰Œ.H©ARMINORZVULNERABILITY
+_
+java:S1148„"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ŒáÂ’Œ.H¹ARMINORZVULNERABILITY
+‰	java:S117¨"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µõ˜·ùÿÿÿÿ8êèÕ“Œ.H”ARMINORZ
+CODE_SMELL
+l	java:S106é"9Replace this use of System.out or System.err by a logger.(¿˜Õˆ8“‚¯ÿ‹.H‹ARMAJORZ
+CODE_SMELL
+}
+java:S2095J"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ĞÀœ¢8Ê Æì‹.H¶ARBLOCKERZBUG
+~
+java:S2095Ò"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ĞÀœ¢8ÌöÎŒ.HşHRBLOCKERZBUG
+~
+java:S2095‰"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ĞÀœ¢8‚Ó™ş‹.HÇARBLOCKERZBUG
+ˆ	java:S1171"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ºåóÿÿÿÿÿ8‰ïŠ“Œ.H¯ARMINORZ
+CODE_SMELL
+ˆ	java:S117o"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ëœ€Îúÿÿÿÿ8üÄ²ì‹.H¡ARMINORZ
+CODE_SMELL
+Z
+java:S1148ˆ"#Use a logger to log this exception.(¤Ş“Ã8Âı•‡Œ.HšARMINORZVULNERABILITY
+q	java:S106À"9Replace this use of System.out or System.err by a logger.(ÚŸ½¡øÿÿÿÿ8êèÕ“Œ.HŠARMAJORZ
+CODE_SMELL
+~
+java:S2095”"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ĞÀœ¢8È“ø²Œ.HÉARBLOCKERZBUG
+_
+java:S1148ÿ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8êèÕ“Œ.HªARMINORZVULNERABILITY
+Z
+java:S1148¨"#Use a logger to log this exception.(¤Ş“Ã8îÓğ·Œ.HÄFRMINORZVULNERABILITY
+z
+java:S2095,"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ë¼Ëûÿÿÿÿ8üÄ²ì‹.H‰ARBLOCKERZBUG
+_
+java:S1148Ã"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ô…û²Œ.HÕARMINORZVULNERABILITY
+ˆ	java:S1170"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ°ú–úÿÿÿÿ8‚Ó™ş‹.H®ARMINORZ
+CODE_SMELL
+~
+java:S2095Î"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(‚‘ìİ8ÿ•†Œ.HARBLOCKERZBUG
+ˆ	java:S117T"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ºåóÿÿÿÿÿ8‚Ó™ş‹.H¬ARMINORZ
+CODE_SMELL
+ˆ	java:S117}"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Í‹¥ûÿÿÿÿ8“‚¯ÿ‹.H¢ARMINORZ
+CODE_SMELL
+
+java:S11924"IDefine a constant instead of duplicating this literal "password" 3 times.(Œ‡ğ„8‰ïŠ“Œ.HÀARCRITICALZ
+CODE_SMELL
+‰	java:S117€"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µõ˜·ùÿÿÿÿ8“‚¯ÿ‹.H­ARMINORZ
+CODE_SMELL
+_
+java:S1148“"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8‰ïŠ“Œ.H¿ARMINORZVULNERABILITY
+Z
+java:S1148°"#Use a logger to log this exception.(¤Ş“Ã8‚Ó™ş‹.H§ARMINORZVULNERABILITY
+ƒ	java:S117/"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òÑï¤8“‚¯ÿ‹.HARMINORZ
+CODE_SMELL
+…
+java:S11921"JDefine a constant instead of duplicating this literal "last_name" 3 times.(»ºåóÿÿÿÿÿ8‰ïŠ“Œ.HµARCRITICALZ
+CODE_SMELL
+^
+java:S1128"+Remove this unused import 'java.sql.Types'.(»¤¤Š8Ì¯­ƒŒ.H¦ARMINORZ
+CODE_SMELL
+k	java:S106©"9Replace this use of System.out or System.err by a logger.(¼üÊ%8‚Ó™ş‹.HÍCRMAJORZ
+CODE_SMELL
+k	java:S106"9Replace this use of System.out or System.err by a logger.(Ø¼¢ƒ8ŒáÂ’Œ.HåERMAJORZ
+CODE_SMELL
+
+java:S11922"FDefine a constant instead of duplicating this literal "email" 3 times.(¬äÂøÿÿÿÿ8‰ïŠ“Œ.H–ARCRITICALZ
+CODE_SMELL
+•
+java:S1488£"aImmediately return this expression instead of assigning it to the temporary variable "temp_user".(Å¯Ğä8¤ø®“Œ.HœARMINORZ
+CODE_SMELL
+~
+java:S2095õ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ĞÀœ¢8‡õ‡ÏŒ.H…IRBLOCKERZBUG
+‰	java:S117ó"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—³ÍÇûÿÿÿÿ8îÓğ·Œ.HÂFRMINORZ
+CODE_SMELL
+‰	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ºåóÿÿÿÿÿ8üÄ²ì‹.H«ARMINORZ
+CODE_SMELL
+e
+java:S1135°"2Complete the task associated to this TODO comment.(¤Ş“Ã8‚Ó™ş‹.H¾ARINFOZ
+CODE_SMELL
+e
+java:S1135¨"2Complete the task associated to this TODO comment.(¤Ş“Ã8êèÕ“Œ.HÅARINFOZ
+CODE_SMELL
+~
+java:S2095¹"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(‚‘ìİ8£Å¡¸Œ.H¥GRBLOCKERZBUG
+z
+java:S2095x"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ë¼Ëûÿÿÿÿ8‰ïŠ“Œ.HÆARBLOCKERZBUG
+{
+java:S2095™"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ë¼Ëûÿÿÿÿ8È“ø²Œ.HÈARBLOCKERZBUG
+‰	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ°ú–úÿÿÿÿ8‰ïŠ“Œ.HŒARMINORZ
+CODE_SMELL
+j	java:S106?"9Replace this use of System.out or System.err by a logger.(¼üÊ%8îÓğ·Œ.HÆFRMAJORZ
+CODE_SMELL
+_
+java:S1148Ş"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÿ•†Œ.H¨ARMINORZVULNERABILITY
+ˆ	java:S117S"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ°ú–úÿÿÿÿ8üÄ²ì‹.H“ARMINORZ
+CODE_SMELL
+_
+java:S1148Ø"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8“‚¯ÿ‹.HARMINORZVULNERABILITY
+‰	java:S117¦"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û’ğ«ıÿÿÿÿ8êèÕ“Œ.H ARMINORZ
+CODE_SMELL
+~
+java:S2095è"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ĞÀœ¢8È“ø²Œ.HÊARBLOCKERZBUG
+l	java:S106Õ"9Replace this use of System.out or System.err by a logger.(¡Îº8ƒÈ½·Œ.H¢FRMAJORZ
+CODE_SMELL
+q	java:S106±"9Replace this use of System.out or System.err by a logger.(‹‰‹‘ıÿÿÿÿ8ÃÏİâ‹.HôERMAJORZ
+CODE_SMELL
+~
+java:S2095¼"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ĞÀœ¢8“‚¯ÿ‹.HÂARBLOCKERZBUG
+~
+java:S2095Â"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(İúËâ8ö–«»Œ.H‰HRBLOCKERZBUG
+‰	java:S117ä"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üş¿·ûÿÿÿÿ8ˆü«³Œ.HÂBRMINORZ
+CODE_SMELL
+‰	java:S117ó"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—³ÍÇûÿÿÿÿ8îÓğ·Œ.HÃFRMINORZ
+CODE_SMELL
+^
+java:S1148>"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8È“ø²Œ.HÌARMINORZVULNERABILITY
+~
+java:S1192|"HDefine a constant instead of duplicating this literal "balance" 3 times.(İ´µ‹8È“ø²Œ.HËARCRITICALZ
+CODE_SMELL
+{
+java:S2095Ö"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ë¼Ëûÿÿÿÿ8‚Ó™ş‹.H¤ARBLOCKERZBUG
+{
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(ìï‡Àûÿÿÿÿ8êèÕ“Œ.H¸ARBLOCKERZBUG
+“
+java:S1488Ù"_Immediately return this expression instead of assigning it to the temporary variable "balance".(İ´µ‹8À¹³Œ.HBRMINORZ
+CODE_SMELL
+_
+java:S1168´"+Return an empty collection instead of null.(¥¹ï8êèÕ“Œ.H°ARMAJORZ
+CODE_SMELL
+z
+java:S2095O"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ë¼Ëûÿÿÿÿ8“‚¯ÿ‹.HÃARBLOCKERZBUG
+~
+java:S2095á"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(‚‘ìİ8£³‰Œ.H£ARBLOCKERZBUG
+_
+java:S1148ì"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ˆü«³Œ.HÃBRMINORZVULNERABILITY
+l	java:S106"9Replace this use of System.out or System.err by a logger.(Ş°«Í8¸¬ÕÏŒ.H–IRMAJORZ
+CODE_SMELL

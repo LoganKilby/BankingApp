@@ -1,0 +1,19 @@
+package services;
+
+public class CustomerService {
+	
+	EmployeeDAO repository = null;
+
+	public CustomerService() {
+		super();
+		this.repository = new EmployeeDAOImpl();
+	}
+	
+	public EmployeeService(EmployeeDAO repository) {
+		super();
+		this.repository = repository;
+	}
+	
+
+
+}

@@ -1,0 +1,18 @@
+package dataAccess;
+
+import java.util.List;
+import models.Account;
+import models.Employee;
+
+public interface AccountDAO {
+
+	public int insert(Account a);
+	
+	public boolean transfer(Account source, Account target, double amount);
+	
+	public List<Account> findAll();
+	
+	public List<Account> findByOwner(Employee emp);
+	
+	public List<Account> findAccounts(Customer cust);
+}

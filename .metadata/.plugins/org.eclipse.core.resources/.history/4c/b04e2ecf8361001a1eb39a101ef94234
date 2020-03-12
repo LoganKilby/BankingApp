@@ -1,0 +1,21 @@
+package dataAccess;
+
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Types;
+import java.util.ArrayList;
+import java.util.List;
+
+import connections.ConnectionUtil;
+import models.Customer;
+
+public class CustomerDAOImpl implements CustomerDAO {
+	@Override
+	public Customer findCustomer(String username, String password) {
+		
+		
+		return cust;
+	}
+}
